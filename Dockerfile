@@ -14,6 +14,7 @@ RUN npm run build
 
 # PHASE 1
 FROM nginx
+EXPOSE 80
 
 # named builders will fail with AWS 10-02-2020
 # COPY --from=builder /app/build /usr/share/nginx/html
